@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFP计算</title>
+</head>
+<body>
+    <div>
+        <label>三点体脂厚度和：</label>
+        <input id="thickness">
+        <label>mm</label>
+    </div>
+    <div>
+        <button  id="myBtn" onclick="clickname()">点击计算体脂率</button>
+        <p id="output"></p>
+    </div> 
+    
+</body>
+<script>
+    var input = document.getElementById("thickness");
+    input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("myBtn").click();
+    }
+});
+    function clickname(){
+        let thickness=input.value;
+        let density=1.099421-0.0009929*thickness+0.0000023*thickness**2-0.0001392*27
+        let BFP=4.76/density-4.28
+        BFP=Number(BFP*100).toFixed(1);
+        BFP+="%";
+        document.getElementById("output").innerHTML = BFP;
+};
+</script>
+</html>

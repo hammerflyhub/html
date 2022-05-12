@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What should I wear today</title>
+</head>
+<body>
+</body>
+<script>
+    function RandArray(array){
+        var rand = Math.random()*array.length | 0;
+        var rValue = array[rand];
+        return rValue;
+    }
+    var myTop = ['深蓝连衣裙', '格子短袖', '白色针织衫', '牛仔衬衣'];
+    var Top = RandArray(myTop);
+    document.write(Top);
+
+    var Pants = RandArray(['浅蓝牛仔裤', '卡其七分裤']);
+    if (Top!='深蓝连衣裙')
+    {
+        document.write("<br>"+Pants);
+    }
+    
+    var Coat = RandArray(['深蓝兜帽夹克', '卡其夹克']);
+    document.write("<br>"+Coat);
+
+    var Shoes = RandArray(['粉白毛鞋', 'Beta老爹鞋']);
+    document.write("<br>"+Shoes);
+</script>
+</html>
