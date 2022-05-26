@@ -30,21 +30,21 @@
         var Coat = RandArray(['深蓝兜帽夹克', '卡其夹克']);
         document.write("<br>"+Coat);
 
-        var Shoes = RandArray(['回力帆布鞋', 'Beta老爹鞋']);
+        var Shoes = RandArray(['粉白毛鞋', 'Beta老爹鞋']);
         document.write("<br>"+Shoes);
     }
     function summer(){
-        var myTop = ['深蓝连衣裙', '格子短袖', '粉色T恤', 'see you soon T恤'];
+        var myTop = ['深蓝连衣裙', '格子短袖', '粉色T恤', '黑蓬蓬裙'];
         var Top = RandArray(myTop);
         document.write(Top);
 
-        var Pants = RandArray(['浅蓝牛仔裤', '卡其七分裤','蓝色休闲裤']);
-        if (Top!='深蓝连衣裙')
+        var Pants = RandArray(['浅蓝牛仔裤','蓝色休闲裤']);
+        if (Top=='格子短袖'||'粉色T恤')
         {
             document.write("<br>"+Pants);
         }
         
-        var Coat = RandArray(['牛仔衬衣']);
+        var Coat = RandArray(['牛仔衬衣',"蓝色兜帽罩衫"]);
         document.write("<br>"+Coat);
 
         var Shoes = RandArray(['粉白毛鞋', 'Beta老爹鞋']);
