@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,8 @@
 <body style="height:98vh">
     <button style="height: 49%;width:49%" onclick="spring()">春</button>
     <button style="height: 49%;width:49%" onclick="summer()">夏</button>
+    <button style="height: 49%;width:49%" onclick="autumn()">秋</button>    
+    <button style="height: 49%;width:49%" onclick="winter()">冬</button>
 </body>
 <script>
     function RandArray(array){
@@ -48,6 +50,32 @@
         document.write("<br>"+Coat);
 
         var Shoes = RandArray(['回力', 'Beta老爹鞋']);
+        document.write("<br>"+Shoes);
+    }
+    function autumn(){
+        var myTop = ['粉卫衣', '牛仔衬衣', '白长袖T恤'];
+        var Top = RandArray(myTop);
+        document.write(Top);
+
+        var Pants = RandArray(['浅蓝牛仔裤','黑色哈伦裤']);document.write("<br>"+Pants);
+       
+        var Coat = RandArray(['卡其夹克',"蓝色兜帽罩衫"]);
+        document.write("<br>"+Coat);
+
+        var Shoes = RandArray(['粉白毛鞋', 'Beta老爹鞋']);
+        document.write("<br>"+Shoes);
+    }
+    function winter(){
+        var myTop = ['粉卫衣', '紫毛衣', '卡其毛衣'];
+        var Top = RandArray(myTop);
+        document.write(Top);
+
+        var Pants = RandArray(['浅蓝牛仔裤','卡其直筒裤']);document.write("<br>"+Pants);
+       
+        var Coat = RandArray(['牛仔衬衣',"蓝色兜帽罩衫"]);
+        document.write("<br>"+Coat);
+
+        var Shoes = RandArray(['粉白毛鞋', 'Beta老爹鞋']);
         document.write("<br>"+Shoes);
     }
 </script>
