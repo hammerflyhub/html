@@ -52,7 +52,7 @@
         var Shoes = RandArray(['回力', 'Beta老爹鞋']);
         document.write("<br>"+Shoes);
     }
-    function autumn(){
+    function autumn(){    
         var myTop = ['粉卫衣', '牛仔衬衣', '白长袖T恤','黑白卫衣'];
         var Top = RandArray(myTop);
         document.write(Top);
@@ -66,13 +66,16 @@
         document.write("<br>"+Shoes);
     }
     function winter(){
-        var myTop = ['粉卫衣', '紫毛衣', '卡其毛衣'];
+        var under = RandArray(["紫秋衣","白长袖T恤"]);
+        document.write(under)
+        
+        var myTop = ['紫毛衣', '卡其毛衣'];
         var Top = RandArray(myTop);
-        document.write(Top);
+        document.write("<br>"+Top);
 
-        var Pants = RandArray(['浅蓝牛仔裤','卡其直筒裤']);document.write("<br>"+Pants);
+        var Pants = RandArray(['假补丁牛仔裤','卡其直筒裤']);document.write("<br>"+Pants);
        
-        var Coat = RandArray(['牛仔衬衣',"蓝色兜帽罩衫"]);
+        var Coat = RandArray(['浅棕翻皮短大衣',"灰色大衣"]);
         document.write("<br>"+Coat);
 
         var Shoes = RandArray(['粉白毛鞋', 'Beta老爹鞋']);
